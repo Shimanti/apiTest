@@ -12,7 +12,7 @@ const db = mongoose.connection
 db.on('error', (error) => console.error(error))
 db.once('open', () => console.log("Connected to Database"))
 
-// Setup app to use json - let's server to accept json
+// Setup app to use json - let's server accept json
 app.use(express.json())
 
 // Setup Router
